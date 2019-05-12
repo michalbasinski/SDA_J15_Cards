@@ -2,11 +2,12 @@ package pl.sda.verifiers;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
-public class LuhnVerifierTest {
+public class LuhnArrayAlgorithmVerifierTest {
 
-    private LuhnVerifier verifier = new LuhnVerifier();
+    private LuhnArrayAlgorithmVerifier verifier = new LuhnArrayAlgorithmVerifier();
 
     @Test
     public void shouldVerify187450AsCorrectNumber() {
