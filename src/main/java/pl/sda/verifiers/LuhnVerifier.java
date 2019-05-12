@@ -2,7 +2,7 @@ package pl.sda.verifiers;
 
 public class LuhnVerifier {
 
-    boolean verify(String cardNo) {
+    public boolean verify(String cardNo) {
         char[] chars = cardNo.toCharArray();
         int counter = 1;
         long sum = 0;

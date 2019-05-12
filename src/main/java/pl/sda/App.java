@@ -1,13 +1,22 @@
 package pl.sda;
 
-/**
- * Hello world!
- *
- */
-public class App 
+import pl.sda.utils.SDACreditCardUtils;
+import pl.sda.utils.ValidationResult;
+
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        String cardNumber = "345908453631747";
+
+        SDACreditCardUtils sdaCreditCardUtils =
+                new SDACreditCardUtils();
+
+        ValidationResult validationResult =
+                sdaCreditCardUtils.validate(cardNumber);
+
+        System.out.println(validationResult.getName()
+                + " : "
+                + validationResult.isChecksumValidation());
     }
 }
